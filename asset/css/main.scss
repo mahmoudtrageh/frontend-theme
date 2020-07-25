@@ -1,0 +1,134 @@
+/******************************************************
+Project:      hanood - Online Resume / CV / portfolio HTML Template
+Version:      1.0
+Last change:  15/6/2020
+
+[ CSS Structure ]
+
+1. Color Codes
+2. public Style
+3.load spinner
+4. left sidebar
+    4.1 logo
+    4.2 navbar
+    4.3 social buttons 
+5. main part
+    5.1 header section
+    5.2 about section
+    5.3 skills section
+    5.4 services section
+    5.5 portfolio section
+    5.6 advantages section
+    5.7 (blog) Articles section
+    5.8 testmonials section
+    5.9 clients section
+    5.10 contact section
+6. portfolio-item
+    6.1 portfolio detail scss
+        6.1.1 portfolio information
+        6.1.2 related articles 
+7. blog (article-page)
+    7.1 blog-articles scss
+        7.1.1 article information
+        7.1.2 tags 
+        7.1.3 share buttons 
+        7.1.4 related articles 
+        7.1.5 comment system
+        7.1.6 about author 
+        7.1.7 latest posts 
+        7.1.8 archieves 
+        7.1.9 categories 
+8. Footer
+9. Responsive
+    9.1. Screen Width 1200px
+    9.2. Screen Width 1024px
+    9.3. Screen Width 920px
+    9.4. Screen Width 768px
+    9.5. Screen Width 576px
+    9.6. Screen Width 420px
+/*------------------------------------------------------------------------------------------*/
+/* 1. Color Codes */
+/*-----------------
+
+***************** Background Color *****************
+
+[ Body, leftsidebar ]   ===> #fff
+
+******************** Text Color ********************
+
+[ Headings h1 & h2 & h3 ]   ===> #000 & #007bff
+[ Paragraphs ]              ===> #6f6f6f
+
+[ leftsidebar Links ]
+a (standard):	#000 (black)
+a (hover):	#007bff (blue)
+a (active):	#007bff (blue)
+
+[ comment system ]
+background-color #f1f1f1
+
+[footer]
+background-color #262626
+
+------------------------------------------------------------------*/
+
+
+$main-color: #007bff;
+$p-color:#6f6f6f;
+$black-text:#000;
+
+@mixin transition {
+     -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -o-transition: all 0.4s ease-in-out 0s;
+  -ms-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+
+@import "./sass/public-style";
+
+@import "./sass/load-spinner";
+
+@import "./sass/left-sidebar";
+
+
+/* main part start */
+
+@import "./sass/header";
+
+@import "./sass/about-section";
+
+@import "./sass/skills-section";
+
+@import "./sass/services-section";
+
+@import "./sass/portfolio-section";
+
+@import "./sass/advantages-section";
+
+@import "./sass/articles-section";
+
+@import "./sass/testmonials-section";
+
+@import "./sass/clients-section";
+
+@import "./sass/contact-section";
+
+/* main part end */
+
+// portfolio-item.html
+
+@import "./sass/portfolio-detail-section";
+
+// article-page.html
+
+@import "./sass/blog-articles";
+
+// footer 
+
+@import "./sass/footer";
+
+// responsive
+
+@import "./sass/responsive-style";

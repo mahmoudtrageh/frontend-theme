@@ -1,0 +1,82 @@
+/* start articles section */
+
+  .articles .card-body span {
+    font-size: 13px;
+    color:$p-color;
+    font-weight: 400;
+    a {
+        background-color: #007bff;
+    color: #fff;
+    padding: 4px;
+  }
+  }
+
+  .articles .card-title {
+    font-size: 26px;
+    font-weight: 300;
+    margin-bottom: 26px;
+    a {
+    text-decoration: none;
+        color:$black-text;
+  }
+  }
+
+  .articles p {
+    color: $p-color;
+    margin-bottom: 20px;
+  }
+
+.articles .r-more {
+  text-decoration: none;
+  margin-bottom: -1px;
+  display: inline-block;
+}
+
+.articles .card-body {
+      padding: 1.25rem 2.5rem;
+      .f-span{
+  position: relative;
+  margin-right: 22px;
+}
+.f-span:after {
+  position: absolute;
+    content: "";
+    width: 1px;
+    height: 9px;
+    background-color: $p-color;
+    top: 4px;
+    right: -12px;
+    border-radius: 2px;
+}
+}
+
+.articles .blog-border {
+  margin: 0 0 20px 0;
+  .sq-span {
+    display: inline-block;
+}
+.l-span {
+      width: 50%;
+    height: 1px;
+    background-color: $p-color;
+    display: inline-block;
+    position: relative;
+    bottom: 5px;
+    left: 5px;
+}
+}
+
+.articles .card-body ul {
+  margin-bottom: 0;
+}
+
+.articles .card {
+  border:0;
+  height: 100%;
+}
+
+
+.articles .card-title a:hover {
+  color:$main-color;  
+}
+/* end articles section */

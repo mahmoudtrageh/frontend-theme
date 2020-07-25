@@ -1,0 +1,175 @@
+/* header start */
+
+@mixin positionAbsolute {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@mixin curvedHeader {
+   content:'';
+  width:180%;
+  height:500%;
+  border-radius: 50% 100% 0 0;
+  position:absolute;
+}
+
+header {
+  position: relative;
+  overflow: hidden;
+}
+
+	.overlay {
+		    @include positionAbsolute();
+        background-color: rgba(0,0,0, 0.5);
+        height:100%;
+    }
+
+    .curved {
+  background: linear-gradient(90deg, #B18F53 20%, transparent, transparent), url(http://placekitten.com/1000/400);
+  overflow:hidden;
+  position:relative;
+}
+.curved:before {
+    @include curvedHeader();
+  background-color:$main-color;
+  top:84%;
+  left:-10%;
+}
+.curved:after {
+    @include curvedHeader();
+  background-color: #FFF;
+  top:90%;
+  left:-5%;
+}
+    
+.header-box img {
+    border: 5px solid #dee2e6;
+    object-fit: cover;
+    -webkit-transform: rotate(45deg) scale(1);
+	transform: rotate(45deg) scale(1);
+	@include transition();
+  &:hover {
+  -webkit-transform: rotate(0) scale(0.9);
+	transform: rotate(0) scale(0.9);
+}
+}
+
+.header-box h3 {
+    font-size: 50px;
+    .h-1 {
+    color:$main-color;
+}
+.h-2 {
+    color:#fff;
+}
+}
+
+main .s-form {
+    position: fixed;
+    top: -60px;
+    right: 1%;
+    margin: 0 auto;
+    z-index: 999;
+    @include transition();
+    button {
+      position: absolute;
+    right: 10px;
+  background-color:transparent ;
+  border: 0;
+}
+form svg:hover {
+  color: $main-color;
+  @include transition();
+}
+}
+
+.click {
+    top: 0 !important;
+}
+
+/* type text */
+
+    .typewrite, .header-box p {
+        font-size: 20px;
+    }
+
+/* type text */
+
+/* arrow bounce start */
+
+        @-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+header .arrow svg {
+  display: block;
+  color: $main-color;
+  &:hover {
+  @include transition();
+}
+}
+
+.arrow {
+  position: absolute;
+  bottom: 0;
+  height: 70px; /*change with size of arrow to make sit on bottom */
+  z-index: 2;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+/* arrow bounce end */
+
+/* header end */

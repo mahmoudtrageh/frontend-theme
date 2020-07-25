@@ -1,0 +1,181 @@
+/* about section start */
+
+.about .snip1543{
+  figcaption p{
+  color:#fff;
+}
+}
+
+.about p {
+  color:$p-color;
+}
+
+.about .details .info svg {
+  color:$main-color;
+}
+
+.about .details .info span{
+  font-weight: 500;
+    color: $black-text;
+    min-width: 85px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.about .details .info .s-span
+{
+  color:$p-color;
+}
+
+.about .details .info .s-span a {
+  font-size: 18px;
+  text-decoration: none;
+  color:$main-color;
+  &:hover {
+  border-bottom: 1px solid $main-color;
+  @include transition();
+}
+}
+
+.about .details .info {
+  margin-bottom: 10px;
+}
+
+.about .element {
+  margin-top: 30px;
+  svg {
+  font-size: 40px;
+  position: relative;
+   background-color: $main-color;
+  color:#fff;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+span {
+  border-bottom:1px solid $main-color;
+    color: $black-text;
+    padding: 5px;
+    display: inline-block !important;
+        border-radius: 7px;
+    margin: 0px 0 10px 0;
+}
+div .h-span {
+   width: 1px;
+    height: 90%;
+    background-color: $p-color;
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    padding: 0;
+    margin: 0;
+    z-index: -1;
+}
+h3 {
+  font-size: 22px;
+    font-weight: normal;
+    padding: 10px 0;
+}
+}
+
+/* snip img start */
+
+.snip1543 {
+  background-color: #fff;
+  color: #ffffff;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 100%;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  width: 100%;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  img {
+  backface-visibility: hidden;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+}
+
+.snip1543 *,
+.snip1543 *:before,
+.snip1543 *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+    @include transition();
+}
+
+
+.snip1543 figcaption {
+  @include positionAbsolute();
+  z-index: 2;
+}
+
+.snip1543 figcaption:before,
+.snip1543 figcaption:after {
+  @include positionAbsolute();
+background-color: rgba(0,0,0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  content: '';
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.snip1543 figcaption:before {
+  -webkit-transform: skew(180deg) translateX(-100%);
+  transform: skew(180deg) translateX(-100%);
+}
+
+.snip1543 figcaption:after {
+  -webkit-transform: skew(180deg) translateX(-100%);
+  transform: skew(180deg) translateX(-100%);
+}
+
+.snip1543 h3,
+.snip1543 p {
+  margin: 0;
+  opacity: 0;
+  letter-spacing: 1px;
+}
+
+.snip1543 h3 {
+  font-family: 'Teko', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.snip1543 p {
+  font-size: 0.9em;
+}
+
+.snip1543 a {
+  @include positionAbsolute();
+  z-index: 1;
+}
+
+.snip1543:hover h3,
+.snip1543.hover h3,
+.snip1543:hover p,
+.snip1543.hover p {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 0.9;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.snip1543:hover figcaption:before,
+.snip1543.hover figcaption:before {
+  -webkit-transform: skew(180deg) translateX(0%);
+  transform: skew(180deg) translateX(-0%);
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+/* snip img end */
+
+/* about section end */

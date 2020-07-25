@@ -1,0 +1,102 @@
+/* start skills section */
+
+.skills-section {
+  background-image: url('../images/service-back2.jpg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+        background-attachment: fixed;
+        .overlay {
+    background-color: rgba(0,0,0, 0.8);
+}
+svg {
+    color: $main-color;
+    @include transition();
+    background-color: #bfbfbf;
+    padding: 10px;
+    border-radius: 20px 3px;
+    font-size: 90px;
+    &:hover {
+    transform: perspective(600px) rotateY(180deg);
+}
+}
+.num {
+  display: inline-block;
+  color:#bfbfbf;
+  font-size: 30px;
+}
+h3{
+      font-size: 18px;
+    color: #bfbfbf;
+    padding: 10px 0;
+}
+.plus {
+      color: #bfbfbf;
+    font-size: 25px;
+    margin-left: 5px;
+}
+}
+
+.skills {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.skill-name {
+        font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+    display: inline-block;
+    color: #bfbfbf;
+    position: absolute;
+    top: -30px;
+    z-index: 9999;
+    font-size: 13px;
+}
+
+.skill-bar {
+  height: 30px;
+  background-color: #bfbfbf;
+  border-radius: 8px;
+}
+.skill-per {
+  height: 30px;
+  background-color: $main-color;
+  border-radius: 8px;
+  width: 0;
+  transition: 1s linear;
+  &:before{
+ content: attr(data-max);
+  position: absolute;
+  padding: 4px 6px;
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 4px;
+  top: -35px;
+  right: 35px;
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -o-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  transform: translateX(50%);
+  }
+  &:after{
+ content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  top: -16px;
+  right: 35px;
+    -webkit-transform: translateX(50%) rotate(45deg);
+  -moz-transform: translateX(50%) rotate(45deg);;
+  -o-transform: translateX(50%) rotate(45deg);
+  -ms-transform: translateX(50%) rotate(45deg);
+  transform: translateX(50%) rotate(45deg);
+  border-radius: 2px;
+  }
+}
+
+/* end skills section */

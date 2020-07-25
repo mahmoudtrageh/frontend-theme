@@ -1,0 +1,133 @@
+/* public start */
+
+.btn:focus, input:focus, .input-group>.form-control:focus, .form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn {
+  border-radius: 0 !important;
+}
+
+.input-group>.form-control:focus {
+    z-index: 0;
+}
+
+body {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body h1, body h2, body h3, body h4, body h5 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.portfolio p, .articles p, .contact p, .portfolio-detail p{
+  color: $p-color;
+}
+
+    .typewrite-2, .about h2, .services h2, .portfolio h2, .articles h2, .contact h2, .isotope_container h2, .portfolio-detail .m-title{
+      position: relative;
+  border-bottom: 1px solid #aaa;
+  display: inline-block;
+  margin-bottom: 20px;
+    }
+
+    .about, .services, .portfolio, .advantages, .testmonials, .articles, .contact,
+ .portfolio-detail, .skills-section {
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+.about h2, .services h2, .portfolio h2, .articles h2, .contact h2 {
+  color: $main-color;
+    font-size:45px;
+}
+
+.about h2 .s-heading, .services h2 .s-heading, .portfolio h2 .s-heading,
+ .articles h2 .s-heading, .contact h2 .s-heading, .isotope_container h2 .s-heading {
+  color:$black-text;
+}
+
+.about h2:before, .about h2:after, .services h2:before, .services h2:after, .portfolio h2:before,
+ .portfolio h2:after, .articles h2::before, .articles h2:after, .contact h2:before, .contact h2:after,
+ .isotope_container h2:before, .isotope_container h2:after,.portfolio-detail .m-title:before, .portfolio-detail .m-title:after {
+    content: '';
+    border-right: 20px solid #fff;
+    border-top: 15px solid #aaa;
+    bottom: -15px;
+    position: absolute;
+    left: 25px;
+}
+
+.about h2:after, .portfolio h2:after, .articles h2:after,
+ .contact h2:after, .isotope_container h2:after, .portfolio-detail .m-title:after {
+       border-top-color: #fff;
+    border-right-color: transparent;
+    bottom: -13px;
+    left: 26px;
+}
+
+.about button:hover, .contact button:hover, .comment-form button:hover{
+  color: $black-text;
+}
+
+.about button:hover:after, .contact button:hover:after, .comment-form button:hover:after, .footer a:hover:after{
+  width: 100%;
+}
+    
+
+.about button, .contact button, .comment-form button, .footer a{
+  position: relative;
+  @include transition();
+}
+
+.about button span, .contact button span, .comment-form button span, .footer a svg{
+  position: relative;
+  z-index: 2;
+  border:0 !important;
+  background-color: transparent !important;
+}
+
+.about button:after, .contact button:after, .comment-form button:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #fff;
+  @include transition();
+}
+
+nav ul li:hover, .navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active
+, .articles .r-more:hover, .blog-container a:hover, .about .details .info .s-span a:hover
+,.contact .info .s-span a:hover, .portfolio-detail .info .s-span a:hover
+ {
+    border-bottom: 1px solid rgba(0,123,255, 0.4);
+    @include transition();
+}
+
+.advantages .snip1543 figcaption, .about .snip1543 figcaption {
+  padding: 20px;
+}
+
+.advantages .snip1543 figcaption h3, .about .snip1543 figcaption h3 {
+  font-size: 20px;
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: $main-color;
+  outline: 1px solid slategrey;
+}
+
+/* public end */

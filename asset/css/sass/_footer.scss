@@ -1,0 +1,40 @@
+/* start footer section */
+
+.footer {
+background-color: #262626;
+  position: relative;
+  p {
+  display: inline-block;
+       padding: 0 70px 0 0;
+       color:#fff;
+}
+a {
+    position: absolute;
+    right: 3%;
+    color: $p-color;
+    border: 1px solid $p-color;
+    padding: 10px;
+    bottom: 30%;
+    svg {
+        color:#fff;
+    }
+
+    &:hover {
+border-color:$main-color;
+        @include transition();
+    }
+    &:after {
+ position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: $main-color;
+  @include transition();
+    }
+}
+
+}
+
+/* end footer section */

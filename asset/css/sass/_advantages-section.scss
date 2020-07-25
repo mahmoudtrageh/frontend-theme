@@ -1,0 +1,61 @@
+/* start advantages section */
+
+@mixin positionAbsolute {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.advantages {
+      background-image: url('../images/advantages.jpg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+        background-attachment: fixed;
+
+        .overlay {
+    background-color: rgba(0,0,0, 0.8);
+        }
+      .detail {
+border: 1px solid #bfbfbf;
+    padding: 20px 10px;
+    border-radius: 25px;  
+      &:hover {
+        border: 1px solid $main-color;
+        @include transition();
+        svg {
+          background-color: #fff;
+        @include transition();
+        }
+      }
+  h2 {
+        display: inline-block;
+    font-size: 21px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    color:#bfbfbf;
+    font-weight: bold;
+}
+svg {
+  font-size: 60px;
+    color: $main-color;
+    display: block;
+    margin: 0 auto 20px;
+    background-color: #bfbfbf;
+    color:$main-color;
+    padding: 10px;
+    border-radius: 20px 3px;
+}
+p {
+  text-align: center;
+  color:#bfbfbf;
+  margin-bottom: 0;
+}
+}
+}
+
+/* end advantages section */

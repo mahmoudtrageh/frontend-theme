@@ -1,0 +1,141 @@
+/* left sidebar start*/
+
+/* navbar start */
+
+nav ul li {
+    border-bottom: 1px solid #dee2e6;
+    a {
+    padding-left: 0 !important;
+}
+&:hover a {
+  color:$main-color !important;
+      @include transition();
+}
+}
+
+nav .socials li:hover {
+  border:0;
+}
+
+.navbar-arrow {
+    right:0;
+    bottom:0;
+    font-size: 35px;
+}
+
+.nav-menu {
+    height: 200px;
+    overflow-y: scroll;
+    list-style: none;
+    padding: 0;
+}
+
+.search-button {
+      position: absolute;
+    top: 38px;
+    right: 0px;
+    padding: 6px 11px;
+    border-color: $main-color;
+}
+
+.navbar-nav {
+  width: 100%;
+      ul {
+      padding: 0;
+    }
+}
+
+.res-nav {
+  display: none;
+}
+
+.navbar-toggler-icon {
+    color:#fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color:#000;
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active{
+  color: $main-color;
+  border-bottom: 1px solid $main-color;
+  }
+
+
+/* end navbar */
+
+/* toggle left sidebar start */
+
+#menu-toggle{
+  color:white;
+  position: absolute;
+  top: -2px;
+  right: 0px;
+  background: $main-color;
+  z-index: 99999999999999;
+  border-radius: 0%;
+  border-color: $main-color;
+  padding: 6px 16px;
+}
+
+#menu-toggle.toggled {
+  left:350px;
+}
+
+#wrapper {
+z-index: 2;
+@include transition();
+}
+
+#wrapper.toggled {
+  margin-left: -350px;
+}
+
+#content.wide {
+  max-width:100%;
+  width: 100%;
+}
+
+
+#content {
+width: 75%;
+position: absolute;
+right: 0;
+@include transition();
+z-index: 0;
+}
+
+
+#wrapper.toggled #content {
+  position: absolute;
+  margin-right: -250px;
+  width:100%;
+}
+
+/* toggle left sidebar end */
+
+/* socials start */
+
+.socials li {
+    display: inline-block;
+    border: 0;
+     svg {
+    float: left;
+    color: $p-color;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+svg:hover {
+    color: #3979c9;
+    cursor: pointer;
+    @include transition();
+}
+}
+
+/* end socials */
+
+/* left sidebar end*/

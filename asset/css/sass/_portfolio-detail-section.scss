@@ -1,0 +1,48 @@
+/* portfolio detail section */
+
+.portfolio-detail .info svg {
+  display: inline-block;
+  margin-right: 8px;
+  color: $main-color;
+  font-size: 18px;
+  width: 18px;
+  height: 18px;
+}
+
+.portfolio-detail .info span {
+  font-weight: 500;
+    color: $black-text;
+    min-width: 85px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+
+.portfolio-detail .info .s-span
+{
+  color:$p-color;
+  a {
+  font-size: 18px;
+  text-decoration: none;
+  color:$main-color;
+}
+&:hover {
+  border-bottom: 1px solid $main-color;
+  @include transition();
+}
+}
+
+.portfolio-detail .info {
+  margin-bottom: 10px;
+}
+
+.portfolio-detail {
+  .links-wrap a {
+    width: 40px;
+    height: 40px;
+    line-height: 46px;
+    font-size: 18px;
+}
+}
+
+/* end portfolio detail section */

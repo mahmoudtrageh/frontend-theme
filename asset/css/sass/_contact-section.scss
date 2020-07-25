@@ -1,0 +1,38 @@
+/* start contact */
+
+.contact .info svg {
+  display: inline-block;
+  margin-right: 8px;
+  color: $main-color;
+  font-size: 18px;
+  width: 18px;
+  height: 18px;
+}
+
+.contact .info span{
+  font-weight: 500;
+    color: $black-text;
+    min-width: 85px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.contact .info .s-span
+{
+  color:$p-color;
+  a {
+  font-size: 18px;
+  text-decoration: none;
+  color:$main-color;
+}
+&:hover {
+  border-bottom: 1px solid $main-color;
+  @include transition();
+}
+}
+
+.contact .info {
+  margin-bottom: 10px;
+}
+
+/* end contact */

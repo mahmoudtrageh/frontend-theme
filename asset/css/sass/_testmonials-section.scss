@@ -1,0 +1,88 @@
+/* start testmonials section */
+
+.testmonials {
+  background-image: url('../images/testmonials.jpg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+        background-attachment: fixed;
+        .overlay {
+    background-color: rgba(20,19,27, 0.8);
+}
+.f-span {
+      letter-spacing: 0px;
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 6px;
+    color: #000;
+}
+.s-span {
+  color:$main-color;
+  letter-spacing: 0px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+svg {
+  font-size: 100px;
+    color: rgba(113, 113, 113, 0.4);
+    position: absolute;
+    right: 7px;
+    bottom: 0;
+}
+
+.carousel-item {
+    padding: 50px;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 15px;
+    p {
+      font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 0px;
+    font-weight: 300;
+    color: #000;
+    position: relative;
+    z-index: 2;
+}
+} 
+
+.carousel-indicators {
+position: absolute;
+    right: 0;
+    left: 0;
+    top: 36%;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    list-style: none;
+    li{
+           width: 30px;
+    height: 30px;
+    background-color: #fff;
+    position: relative;
+    margin: 10px;
+    top: 100px;       
+      border-radius: 50%;
+  
+        }
+
+        img{
+    position: absolute;
+    width: 100%;
+    border-radius: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;            
+}
+
+li.active {
+  border:2px solid $main-color;
+  bottom:0;
+}
+}
+}
+
+/* end testmonials section */

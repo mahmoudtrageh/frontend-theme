@@ -1,0 +1,98 @@
+/* services section start */
+
+.services {
+  background-image: url('../images/service-back.jpg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .card-header {
+  color:$main-color;
+  padding-left: 40px;
+  padding-right: 40px;
+  border:0;
+  background-color: #fff;
+  font-size: 22px;
+}
+.card-body a {
+  color:$main-color;
+  text-decoration: none;
+  &:hover {
+  border-bottom:1px solid $main-color;
+      @include transition();
+}
+}
+h2:before, h2:after {
+    border-right: 20px solid #ECEDEF;
+}
+h2:after {
+    border-right-color: transparent;
+    bottom: -13px;
+    left: 26px;
+        border-top-color: #ECEDEF;
+}
+
+.card-body .card-title {
+    line-height: 1.4;
+    font-size: 25px;
+}
+.card-body p {
+    color: $p-color;
+    font-size: 16px;
+    line-height: 2;
+}
+.card-body {
+  padding-left:40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+}
+.card {
+    border:0;
+    border-left:3px solid rgba(0,123,255, 0.4) !important;
+    margin-bottom: 30px;
+    height: 90%;
+    border-right:3px solid rgba(0,123,255, 0.4) !important;
+}
+.border-b {
+  background-color: rgba(0,123,255, 0.4);
+  height: 3px;
+  width: 100%;
+}
+.details .second {
+  color: $p-color;
+  display: inline;
+  border: 0;
+  font-size: 16px;
+}
+.details svg {
+  position: relative;
+  top:2px;
+}
+.info .first {
+      margin-right: 15px;
+    font-size: 16px;
+    line-height: 1.4;
+    border-right: 3px solid rgba(0,123,255, 0.4);
+    padding-right: 20px;
+    background-color: #fff;
+    padding: 20px;
+      color: #6f6f6f;
+    border-top: 3px solid rgba(0,123,255, 0.4);
+}
+
+.info .second {
+    margin-left: auto;
+    border-top: 3px solid rgba(0,123,255, 0.4);
+    border-left: 3px solid rgba(0,123,255, 0.4);
+    color: $p-color;
+    background-color: #fff;
+    padding: 20px;
+}
+.details span {
+  background-color: #ebf3ff;
+  width: 100%;
+  display: block;
+  font-size: 16px;
+}
+}
+
+/* services section end */

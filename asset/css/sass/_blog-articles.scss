@@ -1,0 +1,219 @@
+/* blog article section */
+
+.blog-container .breadcrumb .f-span{
+  position: relative;
+  margin-right: 22px;
+  &:after {
+  position: absolute;
+    content: "";
+    width: 1px;
+    height: 12px;
+    background-color: $p-color;
+    top: 3px;
+    right: -12px;
+    border-radius: 2px;
+}
+}
+
+.right-sidebar .blog-border {
+  margin: 0 0 20px 0;
+}
+
+.about-author img {
+  height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.blog-container .blog-border .sq-span, .right-sidebar .blog-border .sq-span {
+    display: inline-block;
+}
+
+.blog-container .blog-border .l-span, .right-sidebar .blog-border .l-span {
+      width: 50%;
+    height: 1px;
+    background-color: $p-color;
+    display: inline-block;
+    position: relative;
+    bottom: 5px;
+    left: 5px;
+}
+
+.blog-container .blog-border .l-span {
+  width: 20%;
+}
+
+.blog-container p q {
+      display: block;
+    margin: 30px 0;
+    padding: 20px 24px;
+    border-left: 3px solid rgba(0,123,255, 0.4);
+    border-bottom: 3px solid rgba(0,123,255, 0.4);
+}
+
+.right-sidebar .right-search .search-btn button:hover {
+  background-color: $main-color;
+  color:#fff;
+  cursor: pointer;
+  @include transition();
+}
+
+.blog-container .article-img {
+  width:60%;
+  display: block;
+}
+
+.blog-container .tags .f-span, .blog-container .socials .f-span, .isotope .f-span {
+      line-height: 1;
+    padding: 12px 0px;
+    font-size: 18px;
+    margin-right: 30px;
+    font-weight: 600;
+    color: $black-text;
+    border:0;
+}
+
+.blog-container .tags .f-span:hover {
+  background-color: transparent;
+  color:$black-text;
+  border:0;
+}
+
+.blog-container .tags span {
+  border: 1px solid #d4d4d4;
+  padding: 8px 20px;
+  margin-bottom: 15px;
+}
+
+.blog-container .tags span a {
+  text-decoration: none;
+  color:$black-text;
+}
+
+.blog-container .tags span a:hover {
+  border: 0;
+}
+
+.blog-container span a {
+  &:hover {
+    text-decoration: none;
+    border-bottom: 1px solid $main-color;
+    @include transition();
+    color:$main-color;
+  }
+}
+
+.blog-container .tags span:hover {
+  border: 1px solid $main-color;
+  background-color: $main-color;
+  @include transition();
+}
+
+.blog-container .tags span:hover a {
+  color:#fff;
+}
+
+.comment-form {
+  background-color: #f1f1f1;
+  label {
+  color:#777;
+}
+button span {
+  color: #fff;
+}
+button:hover span {
+  color: $black-text;
+}
+.sq-span, .comment-form .l-span {
+  color:#777;
+}
+}
+
+.post-comments .one-comment h3, .one-reply h3 {
+  font-size: 13px;
+}
+
+.right-sidebar h3 {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.right-sidebar .blog-border {
+  width: 40%;
+}
+
+.right-sidebar button span {
+  color: #fff;
+}
+
+.right-sidebar button:hover span {
+  color:$black-text;
+}
+
+.latest-posts a, .archive a, .categories a{
+  text-decoration: none;
+  color:$p-color;
+  font-size: 18px;
+  display: inline-block;
+  margin: 5px 0;
+  &:hover {
+  color:$main-color;
+  @include transition();
+}
+}
+
+.latest-posts .title {
+  margin-bottom: 10px;
+  span {
+  font-size: 13px;
+}
+}
+
+.archive, .categories {
+  position: relative;
+}
+
+.archive .month span, .categories .category span{
+  font-size: 18px;
+  text-align: right;
+  position: absolute;
+  right: 0;
+  display: inline-block;
+    margin: 5px 0;
+      color:$p-color;
+
+}
+
+.tags .t-span{
+  display: inline-block;
+  border: 1px solid $p-color;
+  padding: 8px 15px;
+  margin: 5px;
+  &:hover {
+  border: 1px solid $main-color;
+  background-color: $main-color;
+  @include transition();
+  color:#fff;
+   a {
+  color:#fff;
+}
+}
+}
+
+.tags .t-span a {
+  text-decoration: none;
+  color:$black-text;
+}
+
+.blog-container {
+  .item-content h4 {
+    color:#fff !important;
+    background-color: $main-color !important;
+    padding: 10px !important;
+    margin: 0 5px;
+    font-size: 18px !important;
+  }
+}
+
+/* blog article section */
